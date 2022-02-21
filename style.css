@@ -1,0 +1,95 @@
+ #at-downloadx {
+     position: relative;
+     display: inline-block;
+     height: 30px;
+     line-height: 30px;
+     width: 140px;
+     text-align: center;
+     background-color: #ffffff;
+     color: #00991f;
+     font-size: 15px;
+     border-radius: 9px;
+     text-transform: capitalize;
+     border: 1px solid #005414!important;
+     margin-top: 1px;
+ }
+ .adpop-top {
+     height: 40px;
+     width: 100%;
+     border-bottom: 1px #E5E5E5 solid;
+ }
+ .btn-at {
+     display: block;
+     height: 50px;
+     color: #fff!important;
+     font-size: 18px;
+     border-radius: 25px;
+     text-transform: uppercase;
+     background: #04AA6D;
+     text-align: center;
+     line-height: 50px;
+     width: 200px;
+     margin: 12px auto;
+     transition: all 0.4s ease-in;
+ }
+ [data-ml-modal] {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     overflow-x: hidden;
+     overflow-y: auto;
+     -webkit-overflow-scrolling: touch;
+     z-index: 999;
+     width: 0;
+     height: 0;
+     opacity: 0;
+ }
+ [data-ml-modal]:target {
+     width: auto;
+     height: auto;
+     opacity: 1;
+     -webkit-transition: opacity 1s ease;
+     transition: opacity 1s ease;
+ }
+ [data-ml-modal]:target .modal-overlay {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     cursor: pointer;
+     background-color: #000;
+     background-color: rgb(247 255 160 / 21%);
+     z-index: 1;
+ }
+ [data-ml-modal] .modal-dialog {
+     border-radius: 6px;
+     box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+     position: relative;
+     width: 90%;
+     max-width: 660px;
+     max-height: 70%;
+     margin: 10% auto;
+     overflow-x: hidden;
+     overflow-y: auto;
+     z-index: 2;
+ }
+ [data-ml-modal] .modal-content {
+     background: #ffffffcf;
+     padding: 23px 27px;
+ }
+ @media (max-width: 767px) {
+     [data-ml-modal] .modal-dialog {
+         margin: 20% auto;
+     }
+ }
+ .at-pop__close {
+     position: absolute;
+     right: 1em;
+     top: 1em;
+     width: 1.1em;
+     height: 1.1em;
+     cursor: pointer;
+ }
